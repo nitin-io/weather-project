@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Project</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #000;
+            display: grid;
+            place-content: center;
+            height: 100vh;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: rgba(255, 255, 255, 0.7);
+            height: 300px;
+            width: 400px;
+            border-radius: 8px;
+            padding: 20px;
+            gap: 20px;
+        }
+        #city-name{
+            padding: 15px;
+            border-radius: 8px;
+            outline: none;
+            border: none;
+            font-size: 1rem;
+        }
+        #city-name:focus{
+            outline: none;
+            box-shadow: 2px 2px 8px 4px grey;
+        }
+    </style>
+</head>
+<body>
+    <form action="/" method="post">
+        <input type="text" name="city" placeholder="Enter The City Name In India" id="city-name">
+        <p>Select The Unit:</p>
+        <label for="metric-unit">Metric</label>
+        <input type="radio" name="unit" value="metric" id="metric-unit">
+        <label for="imperial-unit">Imperial</label>
+        <input type="radio" name="unit" value="imperial" id="imperial-unit">
+        <button type="submit">Check Weather</button>
+    </form>
+</body>
+</html>
