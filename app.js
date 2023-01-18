@@ -26,7 +26,7 @@ app.get("/", function(req, res){
     });
 });
 
-port = process.env.port || 4000;
+port = process.env.port || 8080;
 
 app.listen(port, function(){
     console.log("Running on Port " + port);
